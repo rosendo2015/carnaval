@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fffffe;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  position: relative;
+  text-align: center;
+  padding: 100px 224px;
+}
+.topo {
+  margin: auto;
+
+  height: 332px;
+}
+header p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #e45858;
+  margin-bottom: 18px;
+}
+header h1 {
+  margin: 0 auto;
+
+  width: 647px;
+  height: 532px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  color: #121214;
+}
+header h1 span {
+  color: #6246ea;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 407px;
+  height: 345px;
+  background-image: url(./assets/ilustra-01.svg);
+  z-index: -1;
+}
+header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 407px;
+  height: 345px;
+  background-image: url(./assets/ilustra-02.svg);
+  z-index: -1;
+}
+.topo .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background-color: #fff;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+}
+.form button {
+  padding: 12px 32px;
+  background: #6246ea;
+  border-radius: 5px;
+  border: 1px solid #6246ea;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.form .wrapperInput{
+  display: flex;
+  background-color: #F4F4FF;
+  border-radius: 5px;
+  padding: 12px;
+}
+.form .wrapperInput img{
+  width: 24px;
+  
+}
+.form select,
+.form input{
+  background: transparent;
+  margin-left: 12px;
+  border: 0;
+}
+.form button:hover{
+  background: #4220eb;
+}
+
