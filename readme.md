@@ -1,10 +1,10 @@
-## Desafio 02 #BoraCoda - Sofa Margot II
+## Desafio 07 #BoraCoda - Pagina de busca de blocos de carnaval.
 
 ![Preview](./.github/preview.png)
 
 ## :dart:  Desafio
 
-Desafio 02 do #BoraCodar da Rocketseat, consiste em um card de produto que gira 360º caso o usuário click no botão 360
+Desafio 07 do #BoraCodar da Rocketseat, consiste em uma página de busca para blocos de carnaval.
 
 ## :nut_and_bolt: Tech
 
