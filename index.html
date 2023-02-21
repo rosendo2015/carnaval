@@ -12,12 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bloco de carnaval</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <div id="app">
       <header>
-        <div class="topo">
+        <div class="topo" data-aos="fade-down">
           <p>find your block</p>
           <h1>Encontre os <span>melhores blocos</span> de carnaval de 2023</h1>
           <div class="form">
@@ -46,9 +47,12 @@
           </div>
         </div>
         <div class="container">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image1.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image1.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>O Python do vovô não sobe mais</h3>
@@ -63,9 +67,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image2.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image2.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>Todo mundo null</h3>
@@ -80,9 +87,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image3.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image3.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>Hoje dou exception</h3>
@@ -97,9 +107,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image4.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image4.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>Manda Node</h3>
@@ -114,9 +127,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image5.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image5.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>Só no back-end</h3>
@@ -131,9 +147,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image6.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image6.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>Esse anel não é de Ruby</h3>
@@ -148,9 +167,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image7.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image7.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>Não valho nada mas JAVA li</h3>
@@ -165,9 +187,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image8.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image8.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>Pimenta no C# dos outros é refresco</h3>
@@ -182,9 +207,12 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="image">
-              <img src="./assets/image9.jpg" alt="foto de um bloco de carnaval" />
+              <img
+                src="./assets/image9.jpg"
+                alt="foto de um bloco de carnaval"
+              />
             </div>
             <div class="info">
               <h3>EnCACHE aqui</h3>
@@ -198,10 +226,15 @@
               </div>
             </div>
           </div>
-
         </div>
       </main>
     </div>
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

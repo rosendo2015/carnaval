@@ -50,6 +50,7 @@ header::after {
   height: 345px;
   background-image: url(./assets/ilustra-01.svg);
   z-index: -1;
+  animation: leftRight 1s;
 }
 header::before {
   content: "";
@@ -60,6 +61,7 @@ header::before {
   height: 345px;
   background-image: url(./assets/ilustra-02.svg);
   z-index: -1;
+  animation: rightLeft 1.5s;
 }
 .topo .form {
   display: flex;
@@ -78,13 +80,14 @@ header::before {
   background: #6246ea;
   border-radius: 5px;
   border: 1px solid #6246ea;
-
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.7s;
 }
 .form .wrapperInput {
   width: 348px;
@@ -159,7 +162,15 @@ justify-content: space-between;
   border-radius: 5px 5px 0 0;
   width: 100%;
   height: 100%;
+  opacity: 0.7;
+  transition: all 0.7s;
 }
+.card .image img:hover {
+  opacity: 1;
+  scale: 1.1;
+  rotate: -2deg;
+}
+
 .card .info {
   padding: 8px;
   width: 384px;
@@ -187,3 +198,24 @@ justify-content: space-between;
   display: flex;
   gap: 8px;
 }
+@keyframes leftRight {
+  from{
+    translate: -100px;
+    visibility: 0;    
+  }
+  to{
+    translate: 0;
+    visibility: 1;
+  }  
+}
+@keyframes rightLeft {
+  from{
+    translate: 100px;
+    visibility: 0;
+  }
+  to{
+    translate: 0px;
+    visibility: 1;
+  }
+}
+
