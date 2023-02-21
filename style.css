@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  width: 100%;
-  height: 100vh;
   background-color: #fffffe;
   font-family: "Roboto", sans-serif;
 }
@@ -34,7 +32,6 @@ header h1 {
   margin: 0 auto;
 
   width: 647px;
-  height: 532px;
 
   font-weight: 700;
   font-size: 48px;
@@ -70,12 +67,13 @@ header::before {
   justify-content: center;
   gap: 24px;
   background-color: #fff;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   border-radius: 10px;
   padding: 40px;
   width: 100%;
 }
 .form button {
+  width: 189px;
   padding: 12px 32px;
   background: #6246ea;
   border-radius: 5px;
@@ -88,23 +86,104 @@ header::before {
   color: #ffffff;
   cursor: pointer;
 }
-.form .wrapperInput{
+.form .wrapperInput {
+  width: 348px;
   display: flex;
-  background-color: #F4F4FF;
+  background-color: #f4f4ff;
   border-radius: 5px;
   padding: 12px;
 }
-.form .wrapperInput img{
+.form .wrapperInput img {
   width: 24px;
-  
 }
 .form select,
-.form input{
+.form input {
   background: transparent;
   margin-left: 12px;
   border: 0;
 }
-.form button:hover{
+.form button:hover {
   background: #4220eb;
 }
-
+main {
+  padding: 100px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .right {
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  padding: 8px;
+}
+.header button {
+  padding: 4px 24px;
+  background: #6246ea;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px 24px;
+  text-transform: uppercase;
+  color: #6246ea;
+}
+.container{
+  display: flex;
+justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  width: 384px;
+  margin-bottom: 32px;
+}
+.card .image {
+  width: 100%;
+  margin-bottom: 16px;
+  height: 153px;
+}
+.card .image img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 100%;
+}
+.card .info {
+  padding: 8px;
+  width: 384px;
+}
+.info h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #121214;
+}
+.info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.75);
+  margin: 16px 0 ;
+}
+.info span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.75);
+}
+.localizacao-bloco{
+  display: flex;
+  gap: 8px;
+}
